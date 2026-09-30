@@ -142,11 +142,9 @@ publish.
 | `paper/pymovements_bridge.py`, `PYMOVEMENTS.md`, `pymovements_compare.json` | independent fixation cross-check | scrub (per-student blocks, section code) |
 | `paper/release/build_release.py` | de-identified data release builder (not yet run for deposit) | scrub (salt, audit scope) |
 | `paper/video/` | showcase-video pipeline (`script.py`, `tts.py`, `record.py`, `assemble.py`, `overlay.js`, `slides/`, `prepare_db.py`, `demo_section.py`, `capture_*.py`) | scrub (`overlay.js` mask list, section code) |
-| `paper/lak27/` | paper builder (`build_paper.py`, `paper_text.json`), `make_figures.py`, `make_input_figure.py`, `figs/`, PDF, `LAK27_Showcase_Video.mp4` | ready after check |
 | `images/` | README figures, `make_readme_figures.py`, `readme_aggregates.json` | ready |
 | `LICENSE`, `THIRD_PARTY_NOTICES.md`, `CITATION.cff` | licence and notices (section 18) | **create** |
 | `data/`, `paper/data/`, `paper/release/out/`, `.env`, `.claude/`, `.venv/`, `tools/` | live database, snapshots, credentials, certificates, local binaries | **exclude** |
-| `paper/tracker-lab/`, `paper/aied2027/`, `paper/report/*.docx/*.pdf`, `paper/report/build_*.js`, `paper/PLAN.md`, `paper/prereg-osf.md` | other projects and internal reports | **exclude** |
 
 ---
 
