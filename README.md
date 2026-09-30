@@ -687,23 +687,6 @@ teacher's PDF. The database stores no IP addresses. Note, however, that the clie
 the API types) is what keeps images out: most fields are bounded, but the AOI
 label is an unbounded string.
 
-### 9.6 Research CSV data dictionary (89 columns, release 1.3.0)
-
-| Theme | n | Columns |
-|---|---|---|
-| Identity and outcome | 7 | `section`, `anon_id`, `pseudonym` (optional personal code), `finished`, `score_pct` (pending open answers excluded from the denominator), `n_pending`, `focus_lost` |
-| Camera and legacy validation | 11 | `camera`, `cam_width`, `cam_height`, `cam_fps`, `cam_max_width`, `cam_max_height`, `track_hz` (estimates per second in the 3-s start validation), `lightness`, `val_error`, `val_error_end`, `gaze_quality` (legacy label from a fixed v1.0 rule that was never fitted to data; not used in this README; prefer `track_hz` and `val_error`) |
-| Tracker configuration | 5 | `cam_requested`, `gaze_variant` (policy that ran; `default` = legacy adaptive), `gaze_assigned` (A/B assignment), `cal_clicks`, `mock` |
-| 5-point validation and geometry (1.3.0) | 18 | `val_points`, `acc_x`, `acc_y`, `acc_px`, `prec_x`, `prec_y`, `prec_px`, `prec_sd_px`, `acc_deg`, `prec_deg`, `acc_deg_end`, `prec_deg_end`, `drift_deg`, `min_aoi_x_deg`, `min_aoi_y_deg`, `geom_source` (estimated / measured), `px_per_cm`, `view_dist_cm` |
-| Calibration experiment (1.3.0) | 5 | `cal_arm`, `cal_points`, `cal_samples`, `arm_fallback`, `cal_assigned` |
-| Student extras | 2 | `overconfidence` (share of confident answers that were wrong; empty because the confidence prompt is disabled), `browser_lang` (browser locale, not the chosen UI language) |
-| Item and answer | 10 | `q`, `qtype`, `bloom`, `chosen`, `answer_text` (up to 500 characters), `correct`, `pending`, `grade_source` (`auto`, `pending`, `llm`, `teacher`), `confidence`, `time_ms` |
-| Gaze per item | 13 | `n_samples`, `off_share`, `transitions`, `rereads`, `first_option_ms`, `n_fixations`, `mean_fix_ms`, `dwell_question`, `dwell_A`, `dwell_B`, `dwell_C`, `dwell_D`, `dwell_answer` |
-| Survey | 18 | `svy_` + 16 current items + 2 retired (`sys_helpful`, `sys_discuss`) |
-| **Total** | **89** | |
-
-Student-level columns repeat on each of the student's rows.
-
 ---
 
 ## 10. Analytics and visualisation
