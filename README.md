@@ -2,7 +2,7 @@
 Pre-publication note: This practitioner report is for the submission. Full detail about the funded project and authors' affiliation will be revealed upon paper acceptance.
 -->
 
-# Eye-Rec: webcam eye tracking and a self-hosted LLM for formative quizzes
+# Webcam Eye Tracking and a Self-Hosted LLM in Formative Quizzes: Data Quality, Governance and Cost
 
 This repository accompanies the LAK27 practitioner report *Webcam Eye Tracking and a Self-Hosted LLM in Formative Quizzes: Data Quality, Governance and Cost* (anonymised for
 review). It holds the complete Eye-Rec code, the deployment
@@ -1431,11 +1431,9 @@ distributable. The final decision belongs to the institution's legal office.
 
 ```bibtex
 @inproceedings{anonymous2027eyerec,
-  title     = {What Webcam Eye Tracking Can and Cannot Tell a Teacher About
-               Formative Quizzes},
+  title     = {Webcam Eye Tracking and a Self-Hosted LLM in Formative Quizzes: Data Quality, Governance and Cost},
   author    = {Anonymous},
-  booktitle = {Companion Proceedings of the 17th International Conference on
-               Learning Analytics and Knowledge (LAK27)},
+  booktitle = {Companion Proceedings of the 17th International Conference on Learning Analytics and Knowledge (LAK27)},
   year      = {2027},
   note      = {Practitioner report, under review},
   url       = {[https://anonymous.4open.science/r/[ID]](https://anonymous.4open.science/r/Web-Eye-Track-3589/README.md)}
