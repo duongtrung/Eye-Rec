@@ -126,24 +126,14 @@ publish.
 | `eyerec/static/` | pages (`student`, `teacher`, `review`, `dashboard`, `system`, `index`), `gaze-provider.js`, `gaze-metrics.js`, `gaze-calibration.js`, `gaze-experiments.js`, five `i18n*.js` files | scrub (consent wording, section 16) |
 | `eyerec/static/vendor/` | `webgazer.js` (3.5.3, patched), MediaPipe face mesh, TF.js models, Chart.js 4.4.7, KaTeX 0.16.28 (about 21 MB) | scrub (add licence files) |
 | `tests/` | 11 pytest files (398 cases at 1.3.0) and `tests/js/` (41 node tests) | ready |
-| `docs/ARCHITECTURE.md`, `API.md`, `CODE_MAP.md`, `DATABASE.md`, `EYE_TRACKING.md`, `PDF_FORMAT.md`, `LLM.md`, `DEPLOY_HETZNER.md`, `HOSTING.md`, `INDEX.md`, `RELEASE_NOTES_1.*.md` | reference documentation | scrub (stale values, section 16) |
-| `docs/STATE_*.md`, `RESEARCH_GUIDE.md`, `PLAN_V1_1.md`, `V1_1_IMPLEMENTATION_CONTRACT.md`, `GAZE_ACCURACY_AND_TOOLING.md`, `ML_SCENARIOS.md` | internal planning notes | exclude or scrub |
 | `docker-compose.yml`, `Dockerfile`, `Caddyfile`, `.env.example`, `.dockerignore` | container deployment | ready (pin versions) |
 | `deploy.sh` | one-command update (rsync, rebuild, health check) | scrub (remove default server and domain) |
 | `run.sh`, `run.bat` | laptop / LAN launcher (Linux, Windows) | ready |
 | `requirements.txt` | Python dependencies | scrub (split runtime/test, pin) |
 | `sample_quiz/` | `bloom_ensemble_quiz` (v2 format, 12 items), `ensemble_learning_quiz`, `random_forest_quiz` (v1), each `.md` + `.pdf` | ready |
 | `scripts/simulate_class.py`, `scripts/make_sample_pdf.py` | synthetic class; sample PDF builder | ready |
-| `paper/report/wave1_numbers.py`, `ml_feasibility.py`, `make_drift_explainer.py`, `make_report_figures.py` | wave-1 analysis scripts | scrub (section code, legacy threshold, `--db` argument) |
-| `paper/report/wave1_numbers.json`, `ml_feasibility.json` | aggregate results | scrub (drop per-student array) |
-| `paper/report/profiles.py`, `profiles.json` | script that regenerates the gaze profiles | **create** |
-| `paper/analyze.py`, `paper/stats.json` | cohort, Bloom, survey and drift statistics | scrub (section code) |
-| `paper/pymovements_bridge.py`, `PYMOVEMENTS.md`, `pymovements_compare.json` | independent fixation cross-check | scrub (per-student blocks, section code) |
-| `paper/release/build_release.py` | de-identified data release builder (not yet run for deposit) | scrub (salt, audit scope) |
-| `paper/video/` | showcase-video pipeline (`script.py`, `tts.py`, `record.py`, `assemble.py`, `overlay.js`, `slides/`, `prepare_db.py`, `demo_section.py`, `capture_*.py`) | scrub (`overlay.js` mask list, section code) |
 | `images/` | README figures, `make_readme_figures.py`, `readme_aggregates.json` | ready |
 | `LICENSE`, `THIRD_PARTY_NOTICES.md`, `CITATION.cff` | licence and notices (section 18) | **create** |
-| `data/`, `paper/data/`, `paper/release/out/`, `.env`, `.claude/`, `.venv/`, `tools/` | live database, snapshots, credentials, certificates, local binaries | **exclude** |
 
 ---
 
