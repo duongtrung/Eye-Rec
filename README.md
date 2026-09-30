@@ -4,8 +4,7 @@ Pre-publication note: This practitioner report is for the submission. Full detai
 
 # Eye-Rec: webcam eye tracking and a self-hosted LLM for formative quizzes
 
-This repository accompanies the LAK27 practitioner report *What Webcam Eye
-Tracking Can and Cannot Tell a Teacher About Formative Quizzes* (anonymised for
+This repository accompanies the LAK27 practitioner report *Webcam Eye Tracking and a Self-Hosted LLM in Formative Quizzes: Data Quality, Governance and Cost* (anonymised for
 review). It holds the complete Eye-Rec code, the deployment
 set-up for one rented server, and the aggregate results of the first classroom
 collection ("wave 1", 74 students, August 2026). This README is the reference
